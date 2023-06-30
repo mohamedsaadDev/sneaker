@@ -1,0 +1,27 @@
+.about{
+    height: 450px;
+    text-align: center;
+}
+
+.about-item{
+    margin-top: 120px;
+}
+.about h1{
+    font-size: 50px;
+    color:rgb(249,142,59);
+}
+.about p{
+    font-size: 20px;
+}
+.about strong{
+    color:rgb(249,142,59);
+}
+/*medai Quare*/
+@media (max-width: 768px){
+    .about h1{
+        font-size: 40px;
+    }
+    .about p{
+        font-size: 15px;
+    }
+}

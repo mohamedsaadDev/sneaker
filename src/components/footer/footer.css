@@ -1,0 +1,61 @@
+.contanier-footer{
+    height: 320px;
+}
+.footer-text{
+    color: #ffffff;
+    padding: 20px;
+    background-color: #444444;
+}
+.footer-title{
+    text-align: center;
+    font-size: 35px;
+}
+.footer-pargraph{
+    text-align: center;
+}
+.footer-socil-icon{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.footer-socil-icon i {
+    color: #ffffff;
+    font-size: 23px;
+    padding: 10px;
+    border: 1px #ffffff solid ;
+    border-radius: 50%;
+    margin: 0 5px 15px 5px;
+    cursor: pointer;
+}
+.footer-socil-icon i:hover{
+    color:rgb(249,142,59);
+    transition: 0.5;
+}
+.end-footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.footer-link{
+    padding: 10px;
+    color: #ffffff;
+}
+.footer-link:hover{
+    border-bottom: 1.5px solid rgb(217,111,47);
+}
+/*medai Quare*/
+@media (max-width: 768px){
+    .end-footer{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 15px;
+    }
+}
+@media (max-width: 280px){
+    .footer-link {
+        font-size: 12px;
+    }
+}

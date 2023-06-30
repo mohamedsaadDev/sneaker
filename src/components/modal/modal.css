@@ -1,0 +1,147 @@
+.container-modal{
+    z-index: 1000;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
+.modal{
+    z-index:1500;
+    position: fixed;
+    height: auto;
+    width: 30%;
+    left: 50%;
+    background-color: white;
+    margin-top: -10px;
+    margin-left: 60px;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+
+}
+.top-modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #c0c0c0;
+    margin: 0 12px;
+}
+.top-modal i {
+    font-size: 30px;
+    cursor: pointer;
+    color: darkred;
+}
+.continer-cart-prodect{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.img-prodect-cart{
+    width: 80px;
+}
+.trash-prodect-cart{
+    cursor: pointer;
+}
+.title-prodect-cart{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+}
+.trash-prodect-cart:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.container-middle-modal{
+    margin: 20px;
+}
+.middle-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+}
+.middle-modal i {
+    cursor: pointer;
+    
+
+}
+.middle-modal i:hover{
+    color: red;
+    transition: 0.5s;
+}
+.middle-modal span, i {
+    font-size: 20px;
+}
+.middle-modal .img-home{
+    width: 70px;
+}
+.container-middle-modal .price-show{
+    margin-left: 90px;
+}
+.btn-Checkout {
+    margin:8px 0 15px 35px;
+    width: 80%;
+    color: white;
+    background-color:rgb(249,142,59);
+    cursor: pointer;
+}
+.btn-Checkout:hover{
+    background-color:rgb(253, 171, 108);
+    transition: 0.7s;
+
+}
+.empty-cart {
+    margin: 40px 0 40px 130px;
+}
+/*media Querise*/
+@media (max-width: 768px){
+    .modal{
+        width: 50%;
+        left: 22%;
+    }
+    .empty-cart {
+        margin: 40px 0 40px 25%;
+    }
+    .title-prodect-cart{
+        font-size: 15px;
+    }
+    .trash-prodect-cart {
+        margin-right: 10px;
+    }
+    .btn-Checkout {
+        margin: 8px 0 15px 25px;
+    }
+}
+@media (max-width: 480px){
+    .modal{
+        width: 65%;
+        left: -1%;
+    }
+    .btn-Checkout {
+        margin: 8px 0 15px 25px;
+    }
+}
+@media (max-width: 280px){
+    .modal{
+        width: 70%;
+        left: -20%;
+    }
+    .img-cart-buying {
+        width: 65px;
+    }
+    .title-prodect-cart {
+        font-size: 10px;
+    }
+    .trash-prodect-cart{
+        font-size: 15px;
+    }
+    .btn-Checkout {
+        margin: 8px 0 15px 20px;
+        height: 30px;
+    }
+}

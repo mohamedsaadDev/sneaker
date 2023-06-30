@@ -1,0 +1,120 @@
+.wrapper-container-man{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+.container-man{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-top: 10px;
+}
+.man-prodect{
+    width: 90%; 
+    border: 2px solid rgb(245, 159, 0);
+    margin: 15px;
+    border-radius: 5px;
+}
+.bigimg-man{
+    width:70%;
+    margin-left: 20%;
+}
+
+.container-man-imgsmil{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.container-man-imgsmil img{
+    margin: 5px;
+    border: 1px solid rgb(245, 159, 0);
+    border-radius:5px ;
+    cursor: pointer;
+}
+.container-man-imgsmil img:hover{
+    opacity: 0.7;
+}
+.man-imgsmil{
+    width: 20%;
+    margin-bottom: 30px;
+}
+.man-prodect .price-man , .title-prodect{
+    margin: 6%;
+    display: inline;
+    font-size: 20px;
+}
+.man-prodect .price-man{
+    margin-left: 30%;
+}
+.man-prodect .btn-addcart-man{
+    width: 80%;
+    height: 50px;
+    font-size: 17px;
+    margin: 8% 0 8% 8%;
+    color: #fff;
+    background-color: rgb(249,142,59);
+    border-radius: 7px ;
+    cursor: pointer;
+}
+.man-prodect .btn-addcart-man:hover{
+    opacity: 0.9;
+    transition: 6ms;
+}
+.trsh-prodect-man{
+    margin: 2.5%;
+    font-size: 22px;
+    cursor: pointer;
+} 
+.trsh-prodect-man:hover{
+    color: red;
+    transition: 0.7s;
+}
+/*media Querise*/
+@media (max-width: 768px){
+    .container-man{
+        width: 100%;
+    }
+    .man-prodect{
+        width: 80%; 
+        margin: 5px 0 17px 10%;
+        border: 0.5px solid rgb(245, 159, 0);
+    }
+    .man-prodect .price-man {
+        margin-left: 20%;
+    }
+    .man-prodect .btn-addcart-man {
+        margin: 8% 0 8% 5%;
+    }
+}
+@media (max-width: 670px){
+    .container-man{
+        width: 100%;
+        display: block;
+    }
+    .man-prodect{
+        width: 90%;
+        margin: 5px 0 5% 7%; 
+    }
+    .man-prodect .btn-addcart-man{
+        height: 45px;
+    }
+    .man-prodect .price-man {
+        margin-left: 15%;
+    }
+}
+@media (max-width: 280px){
+    .trsh-prodect-man {
+        font-size: 15px;
+        margin: 2%;
+    }
+    .man-prodect .btn-addcart-man{
+        height: 35px;
+    }
+    .man-prodect .price-man, .title-prodect{
+        font-size: 15px;
+    }
+    .man-prodect .price-man {
+        margin-left: 20%;
+    }
+}

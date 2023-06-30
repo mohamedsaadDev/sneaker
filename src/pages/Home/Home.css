@@ -1,0 +1,224 @@
+.wrapper-contianer-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px;
+}
+.contianer-home{
+    display: flex;
+    justify-content: center;
+}
+.continer-imge-home{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.big-img{
+    width: 55%;
+    margin: 0 0 0 16%; 
+    border-radius: 10px; 
+}
+.smile-imges{
+    margin: 2% 0 0 12%;
+}
+.smil-img{
+    width:13%;
+    margin-left: 4%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.continer-text-home h5{
+    color: rgb(255,125,27);
+    letter-spacing: 1px;
+}
+.continer-text-home h2{
+    color: black;
+    font-weight:800;
+    font-size: 35px;    
+}
+.continer-text-home p{
+    color: rgb(77, 76, 75);
+    font-size: 15px;
+}
+.continer-text-home .price-home{
+    font-size: 25px;
+}
+.continer-text-home h3 span{
+    display: inline-block;
+    color:  rgb(249, 142, 59);
+    background-color: rgb(253,222,194);
+    padding: 4px;
+    border-radius: 5PX;
+    font-size: 16px;
+    margin-left: 7px ;
+}
+.continer-text-home del {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 20px;
+}
+.continer-text-home .btnadd {
+    margin-left: 15px;
+    font-size: 15px;
+    width: 200px;
+    height: 43px;
+    background-color:  rgb(249, 142, 59);
+    color: white;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.continer-text-home .btnadd:hover{
+    background-color: rgb(252, 191, 137);
+    transition:1s;
+}
+.continer-text-home .btnadd i{
+    font-size: 15px;
+}
+.show-quantity-home{
+    display: inline-block;
+    height: 20px;
+}
+.btn-positive, 
+.btn-negative ,.show-quantity-home{
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.btn-positive{
+    border-radius: 5px  0 0 5px;
+    cursor: pointer;
+} 
+
+.btn-negative {
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.btn-negative:disabled {
+    cursor: not-allowed;
+}
+.arrow-left-slider-home,.arrow-right-slider-home{
+    display: none;
+}
+/*media Querise*/
+@media (max-width: 768px){
+    .continer-imge-home {
+        width: 400px;
+    }
+    .big-img {
+        width: 70%;
+    }
+    .smil-img {
+        width: 17%;
+    }
+}
+@media (max-width: 480px){
+    .wrapper-contianer-home{
+        width:100%;
+        margin: 0;
+        display:table;
+        
+    }
+    .contianer-home{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .continer-imge-home{
+        width: 0;
+        margin-left: 0px;
+    }
+    .smile-imges{
+        display: flex;
+        flex-direction:row;
+        margin: 0 0 0 -10px;
+    }
+
+    .big-img{
+        display: none;
+        position: relative;
+    }
+    .smil-img{
+        margin-right: 7px;
+        width: 430px;
+        cursor: context-menu;
+    }
+    .arrow-left-slider-home{
+        display: inline;
+        position: absolute;
+        margin-left:40px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        padding: 4px;
+        z-index: 9;
+        cursor:pointer;
+    }
+    .arrow-right-slider-home{
+        display: inline;
+        position: absolute;
+        margin-left:360px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        padding: 4px;
+        z-index: 999;
+        cursor:pointer;
+    }
+    .continer-text-home{
+        margin-left:15px ;
+    }
+    .show-quantity-home,.btn-positive,.btn-negative{
+        display: inline-block;
+        width: 30%; 
+    }
+    .show-quantity-home{
+        text-align: center;
+    }
+    .continer-text-home .btnadd{
+        margin: 10px 10px 10px 26px;
+        width: 80%;
+    }
+    .btn-positive{
+        border-radius: 8px  0 0 10px;
+    } 
+    
+    .btn-negative {
+        border-radius: 0 10px 10px 0;
+    }
+    .continer-text-home p {
+        font-size: 12px;
+    }
+    .continer-text-home h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 390px){
+    .arrow-right-slider-home{
+        margin-left:330px;
+    }
+    .smil-img{
+        width: 400px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 280px){
+    .smil-img{
+        width: 300px;
+        margin-right: 140px;
+    }
+    .arrow-right-slider-home{
+        margin-left:245px;
+    }   
+    .arrow-left-slider-home{
+        margin-left: 20px;
+    }
+    .continer-text-home h2 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .continer-text-home p {
+        font-size: 11px;
+    }
+    .continer-text-home .btnadd{
+        margin: 10px 10px 10px 20px;
+    }
+}
